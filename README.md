@@ -17,7 +17,7 @@ The UNC path likely has the data file. this means the DiskSpd is testing the net
 
 
 ``` Powershell
-echo WacAzLocalhelp; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $path=Join-Path $PWD 'my4corners.ps1'; (New-Object Net.WebClient).DownloadFile('https://github.com/Louisjreeves/my4corners/raw/refs/heads/main/my4corners.ps1', $path); & $path
+echo my4corners; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $path=Join-Path $PWD 'my4corners.ps1'; (New-Object Net.WebClient).DownloadFile('https://github.com/Louisjreeves/my4corners/raw/refs/heads/main/my4corners.ps1', $path); & $path
 ```
 
 
