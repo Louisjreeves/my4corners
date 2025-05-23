@@ -99,6 +99,52 @@ This graph is accurate to the extent all CACHE is off on windows, pools, hardwar
 The CSV will be in the download folder by the time you run this option 3. this is exported for you and will be used to populte the graph 
 
 
+#Below is a useful comparison. This copy test is a typical Laptop with NVME drives and a seperate NVME boot drive. #
+#below that is the raw data#
+
+
+![image](https://github.com/user-attachments/assets/376583cb-cae7-4c22-8dea-47fb6b442a71)
+
+
+Test N# Drive        Operation Access Blocks      Run N# IOPS     MB/sec  Latency ms CPU %
+------- -----        --------- ------ ------      ------ ----     ------  ---------- -----
+Test 1  \\THOR\temp2 Read      Random Blocks 4K   Run 1  20201.46 78.91   0.099      11.78%
+Test 5  \\THOR\temp2 Read      Random Blocks 8K   Run 1  16234.70 126.83  0.123      31.98%
+Test 9  \\THOR\temp2 Read      Random Blocks 64K  Run 1  7974.45  498.40  0.250      21.46%
+Test 13 \\THOR\temp2 Read      Random Blocks 512K Run 1  5411.82  2705.91 0.369      13.77%
+
+
+
+Test N# Drive        Operation Access     Blocks      Run N# IOPS     MB/sec  Latency ms CPU %
+------- -----        --------- ------     ------      ------ ----     ------  ---------- -----
+Test 2  \\THOR\temp2 Read      Sequential Blocks 4K   Run 1  26032.48 101.69  0.075      49.79%
+Test 6  \\THOR\temp2 Read      Sequential Blocks 8K   Run 1  34812.54 271.97  0.057      47.05%
+Test 10 \\THOR\temp2 Read      Sequential Blocks 64K  Run 1  21977.99 1373.62 0.090      35.49%
+Test 14 \\THOR\temp2 Read      Sequential Blocks 512K Run 1  5072.84  2536.42 0.393      17.07%
+
+
+
+Test N# Drive        Operation Access Blocks      Run N# IOPS     MB/sec Latency ms CPU %
+------- -----        --------- ------ ------      ------ ----     ------ ---------- -----
+Test 3  \\THOR\temp2 Write     Random Blocks 4K   Run 1  26368.46 103.00 0.075      48.36%
+Test 7  \\THOR\temp2 Write     Random Blocks 8K   Run 1  32375.72 252.94 0.061      37.68%
+Test 11 \\THOR\temp2 Write     Random Blocks 64K  Run 1  14495.85 905.99 0.137      15.43%
+Test 15 \\THOR\temp2 Write     Random Blocks 512K Run 1  1856.08  928.04 1.076      12.66%
+
+
+
+Test N# Drive        Operation Access     Blocks      Run N# IOPS     MB/sec  Latency ms CPU %
+------- -----        --------- ------     ------      ------ ----     ------  ---------- -----
+Test 4  \\THOR\temp2 Write     Sequential Blocks 4K   Run 1  28976.02 113.19  0.069      36.33%
+Test 8  \\THOR\temp2 Write     Sequential Blocks 8K   Run 1  31091.77 242.90  0.064      30.29%
+Test 12 \\THOR\temp2 Write     Sequential Blocks 64K  Run 1  17845.98 1115.37 0.112      19.34%
+Test 16 \\THOR\temp2 Write     Sequential Blocks 512K Run 1  3420.03  1710.02 0.583      14.92%
+
+
+I hope this helps 
+
+
+
 
 
 
