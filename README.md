@@ -3,7 +3,7 @@ test disks speed 4 tests
 
 #for testing disks#
 
-# WacAzLocalhelp
+# My4Corners Test#
 Tests a standard disk from Diskspd pagefile to a unc path. This is what has been tested. 
 
 Disable all cache on both sides. this will influence the numbers 
